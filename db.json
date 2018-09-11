@@ -22,6 +22,15 @@
 			}
 		},
 		{
+			"name":"육아 커뮤니티",
+			"url":"/community/baby",
+			"icon":"icon-pencil",
+			"badge":{
+				"variant":"info",
+				"text":"NEW"
+			}
+		},
+		{
 			"divider":"true"
 		},
 		{
