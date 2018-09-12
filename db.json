@@ -57,24 +57,5 @@
 				"variant":"danger"
 			}
 		]
-	},
-	"routes":[
-		{"path":"/", "exact":"true","name":"Home","component":"DefaultLayout"},
-		{"path":"/community","exact":"true","name":"Community","component":"Loadable({
-			loader: () => import('../../Community/CommunityHome'),
-			loading: () => {return <div>Loading...</div>;}
-		})"},
-		{"path":"/community/news","exact":"true","name":"News","component":"Loadable({
-			loader: () => import('../../Community/CommunityNews'),
-			loading: () => {return <div>Loading...</div>;}
-		})"},
-		{"path":"/community/mylist","exact":"true","name":"MyList","component":"Loadable({
-			loader: () => import('../../Community/CommunityMyList'),
-			loading: () => {return <div>Loading...</div>;}
-		})"},
-		{"path":"/community/register","exact":"true","name":"Register","component":"Loadable({
-			loader: () => import('../../Community/CommunityRegister'),
-			loading: () => {return <div>Loading...</div>;}
-		})"}
-	]
+	}
 }
