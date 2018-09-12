@@ -32,6 +32,15 @@
 				}
 			},
 			{
+				"name":"리눅스 커뮤니티",
+				"url":"/community/linux",
+				"icon":"icon-pencil",
+				"badge":{
+					"variant":"info",
+					"text":"NEW"
+				}
+			},
+			{
 				"divider":"true"
 			},
 			{
@@ -57,5 +66,15 @@
 				"variant":"danger"
 			}
 		]
-	}
+	},
+	"routes" : [
+		{
+			"path" : "/community/baby",
+			"name" : "육아 커뮤니티"
+		},
+		{
+			"path" : "/community/linux",
+			"name" : "리눅스 커뮤니티"
+		}
+	]
 }
