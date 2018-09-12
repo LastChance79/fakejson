@@ -1,59 +1,80 @@
 {
-	"items":[
-		{
-			"title":"true",
-			"name":"",
-			"wrapper":{
-				"element":"",
-				"attributes":{}
+	"navs":{
+		"items":[
+			{
+				"title":"true",
+				"name":"",
+				"wrapper":{
+					"element":"",
+					"attributes":{}
+				},
+				"class":""
 			},
-			"class":""
-		},
-		{
-			"divider":"true"
-		},
-		{
-			"name":"커뮤니티 소식",
-			"url":"/community/news",
-			"icon":"icon-pencil",
-			"badge":{
-				"variant":"info",
-				"text":"NEW"
+			{
+				"divider":"true"
+			},
+			{
+				"name":"커뮤니티 소식",
+				"url":"/community/news",
+				"icon":"icon-pencil",
+				"badge":{
+					"variant":"info",
+					"text":"NEW"
+				}
+			},
+			{
+				"name":"육아 커뮤니티",
+				"url":"/community/baby",
+				"icon":"icon-pencil",
+				"badge":{
+					"variant":"info",
+					"text":"NEW"
+				}
+			},
+			{
+				"divider":"true"
+			},
+			{
+				"name":"커뮤니티 신청",
+				"url":"/community/register",
+				"icon":"icon-cloud-download",
+				"class":"mt-auto",
+				"variant":"success"
+			},
+			{
+				"divider":"true"
+			},
+			{
+				"name":"포인트 관리",
+				"url":"http://dev.bluegold.com:3000/",
+				"icon":"icon-cloud-download",
+				"variant":"success"
+			},
+			{
+				"name":"고객 센터",
+				"url":"http://dev.bluegold.com:3000/",
+				"icon":"icon-layers",
+				"variant":"danger"
 			}
-		},
-		{
-			"name":"육아 커뮤니티",
-			"url":"/community/baby",
-			"icon":"icon-pencil",
-			"badge":{
-				"variant":"info",
-				"text":"NEW"
-			}
-		},
-		{
-			"divider":"true"
-		},
-		{
-			"name":"커뮤니티 신청",
-			"url":"/community/register",
-			"icon":"icon-cloud-download",
-			"class":"mt-auto",
-			"variant":"success"
-		},
-		{
-			"divider":"true"
-		},
-		{
-			"name":"포인트 관리",
-			"url":"http://dev.bluegold.com:3000/",
-			"icon":"icon-cloud-download",
-			"variant":"success"
-		},
-		{
-			"name":"고객 센터",
-			"url":"http://dev.bluegold.com:3000/",
-			"icon":"icon-layers",
-			"variant":"danger"
-		}
+		]
+	},
+	"routes":[
+		{"path":"/", "exact":"true","name":"Home","component":"DefaultLayout"},
+		{"path":"/community","exact":"true","name":"Community","component":"Loadable({
+			loader: () => import('../../Community/CommunityHome'),
+			loading: () => {return <div>Loading...</div>;}
+		})"},
+		{"path":"/community/news","exact":"true","name":"News","component":"Loadable({
+			loader: () => import('../../Community/CommunityNews'),
+			loading: () => {return <div>Loading...</div>;}
+		})"},
+		{"path":"/community/mylist","exact":"true","name":"MyList","component":"Loadable({
+			loader: () => import('../../Community/CommunityMyList'),
+			loading: () => {return <div>Loading...</div>;}
+		})"},
+		{"path":"/community/register","exact":"true","name":"Register","component":"Loadable({
+			loader: () => import('../../Community/CommunityRegister'),
+			loading: () => {return <div>Loading...</div>;}
+		})"}
 	]
 }
