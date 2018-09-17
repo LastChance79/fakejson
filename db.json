@@ -28,6 +28,74 @@
 			"attUrl" : "https://github.com/LastChance79/fakejson/blob/master/db.json"
 		}
 	],
+	"navs":{
+		"items":[
+			{
+				"title":"true",
+				"name":"",
+				"wrapper":{
+					"element":"",
+					"attributes":{}
+				},
+				"class":""
+			},
+			{
+				"divider":"true"
+			},
+			{
+				"name":"커뮤니티 소식",
+				"url":"/community/news",
+				"icon":"icon-pencil",
+				"badge":{
+					"variant":"info",
+					"text":"NEW"
+				}
+			},
+			{
+				"name":"육아 커뮤니티",
+				"url":"/community/baby",
+				"icon":"icon-pencil",
+				"badge":{
+					"variant":"info",
+					"text":"NEW"
+				}
+			},
+			{
+				"name":"리눅스 커뮤니티",
+				"url":"/community/linux",
+				"icon":"icon-pencil",
+				"badge":{
+					"variant":"info",
+					"text":"NEW"
+				}
+			},
+			{
+				"divider":"true"
+			},
+			{
+				"name":"커뮤니티 신청",
+				"url":"/community/register",
+				"icon":"icon-cloud-download",
+				"class":"mt-auto",
+				"variant":"success"
+			},
+			{
+				"divider":"true"
+			},
+			{
+				"name":"포인트 관리",
+				"url":"http://dev.bluegold.com:3000/",
+				"icon":"icon-cloud-download",
+				"variant":"success"
+			},
+			{
+				"name":"고객 센터",
+				"url":"http://dev.bluegold.com:3000/",
+				"icon":"icon-layers",
+				"variant":"danger"
+			}
+		]
+	},
 	"routes" : [
 		{
 			"path" : "/community/baby",
