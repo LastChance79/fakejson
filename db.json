@@ -1,31 +1,27 @@
 {
-	"community": {
-		"register": {
-			"list": [
-				{
-					"title" : "육아당 창당 신청 합니다",
-					"userName" : "babyAdmin",
-					"regDt" : "2018-09-17",
-					"content" : "육아당 창당 신청 합니다",
-					"attUrl" : "https://github.com/LastChance79/fakejson/blob/master/db.json"
-				},
-				{
-					"title" : "리눅스당 창당 신청 합니다",
-					"userName" : "linuxAdmin",
-					"regDt" : "2018-09-17",
-					"content" : "리눅스당 창당 신청 합니다",
-					"attUrl" : "https://github.com/LastChance79/fakejson/blob/master/db.json"
-				},
-				{
-					"title" : "디피디당 창당 신청 합니다",
-					"userName" : "dpdAdmin",
-					"regDt" : "2018-09-17",
-					"content" : "디피디당 창당 신청 합니다",
-					"attUrl" : "https://github.com/LastChance79/fakejson/blob/master/db.json"
-				}
-			]
+	"community_register_list": [
+		{
+			"title" : "육아당 창당 신청 합니다",
+			"userName" : "babyAdmin",
+			"regDt" : "2018-09-17",
+			"content" : "육아당 창당 신청 합니다",
+			"attUrl" : "https://github.com/LastChance79/fakejson/blob/master/db.json"
+		},
+		{
+			"title" : "리눅스당 창당 신청 합니다",
+			"userName" : "linuxAdmin",
+			"regDt" : "2018-09-17",
+			"content" : "리눅스당 창당 신청 합니다",
+			"attUrl" : "https://github.com/LastChance79/fakejson/blob/master/db.json"
+		},
+		{
+			"title" : "디피디당 창당 신청 합니다",
+			"userName" : "dpdAdmin",
+			"regDt" : "2018-09-17",
+			"content" : "디피디당 창당 신청 합니다",
+			"attUrl" : "https://github.com/LastChance79/fakejson/blob/master/db.json"
 		}
-	},
+	],
 	"routes" : [
 		{
 			"path" : "/community/baby",
